@@ -14,6 +14,10 @@ body {
     font-size: 1.8rem;
 }
 
+body.rubric {
+    max-width: 1200px;
+}
+
 h1 {
     font-weight: 400;
    font-size: 3.6rem;
@@ -51,3 +55,15 @@ a {
   li {
     padding: 5px;
   }
+
+  table, th, td {
+    text-align: left;
+    border: 1px solid;
+    padding: 10px;
+  }
+
+  table {
+    margin-top: 50px;
+    border-collapse: collapse;
+  }
+
