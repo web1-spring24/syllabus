@@ -12,6 +12,7 @@ body {
     color: #323F4E;
     background-image: url('../imgs/dot-bg.png');
     font-size: 1.8rem;
+    line-height: 3rem;
 }
 
 body.rubric {
@@ -37,14 +38,12 @@ p {
     margin-top: 5px;
 }
 
-a {
-    color: #B59005;
-}
 
-a {
+a, em {
     background-color: transparent;
     color: #B59005;
     font-weight: 700;
+    font-style: normal;
     transition: color .25s ease-in-out, background-color .25s ease-in-out;
   }
   a:hover {
@@ -67,3 +66,11 @@ a {
     border-collapse: collapse;
   }
 
+section.class {
+    margin: 50px 0;
+   border: 1px solid #323F4E ;
+   border-radius: 5px;
+   padding: 0 20px 20px 20px;
+   
+    
+}
