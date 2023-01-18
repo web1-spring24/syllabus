@@ -78,3 +78,15 @@ section.class {
    
     
 }
+
+h3 a {
+  text-decoration: none;
+  color: #323F4E;
+
+}
+
+h3 a:hover {
+  background-color: transparent;
+  color: #323F4E;
+  cursor: default;
+}
