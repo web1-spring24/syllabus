@@ -90,3 +90,8 @@ h3 a:hover {
   color: #323F4E;
   cursor: default;
 }
+
+code {
+  background-color: #EDEDED;
+  padding: 5px 10px;
+}
