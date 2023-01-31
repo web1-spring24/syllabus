@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-45KQHJCPQW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-45KQHJCPQW");
+    </script>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3341456, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <title>Core HTML Tags</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="img/png" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="assets/imgs/tcnj-logo.png" /><br />
+    <a href="index.html">← Back to Syllabus</a>
+    <h1>Core HTML Tags</h1>
+
+    <p>
+      This is an abbreviated list of what I believe are the "need to know" HTML
+      tags along with some useful information on their usage. For the full list
+      of all possible tags along with their attributes and usage, check out this
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+        target="_blank"
+        >HTML element reference from Mozilla</a
+      >.
+    </p>
+    <p>
+      Fun fact: The first version of HTML developed in 1991 had 18 HTML tags.
+      Today there are 106 non-deprecated HTML tags.
+    </p>
+    <p>
+      Check out
+      <a
+        href="https://github.com/web1-spring23/TCNJPaws-Example/blob/Final-Website/index.html"
+        target="_blank"
+        >this example code</a
+      >
+      showing a lot of these elements in action.
+    </p>
+    <h2>"Boilerplate" Elements</h2>
+    <p>
+      Called boilerplate because it is like a template of core elements that
+      every page needs. Here's an example of it all together:
+    </p>
+
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;The description of this page&quot;&gt;
+    &lt;title&gt;The title of this page&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <dl>
+      <dt><code>&lt;!DOCTYPE HTML&gt;</code></dt>
+      <dd>
+        Defines the document type. Really only used for HTML code. Needs to be
+        the very first line of your HTML. It does not need a closing tag.
+      </dd>
+      <dt><code>&lt;html lang=&quot;en&quot;&gt;&lt;/html&gt; </code></dt>
+      <dd>
+        This is the opening tag of your HTML code, with an attribute defining
+        the language. You know how your web browser will try to translate web
+        pages sometimes? this is how it knows what language it is. All of your
+        website's code (besides the DOCTYPE declaration) will exist inside this
+        tag.
+      </dd>
+      <dt>
+        <code>&lt;head&gt;&lt;/head&gt; </code>
+      </dt>
+      <dd>
+        Contains the data about the page for the computer to parse. Scripts,
+        stylesheets, and meta data about the page are all expressed here. Not to
+        be confused with the header tag.
+      </dd>
+      <dt>
+        <code
+          >&lt;meta charset=&quot;UTF-8&quot;&gt; <br />&lt;meta
+          http-equiv=&quot;X-UA-Compatible&quot;
+          content=&quot;IE=edge&quot;&gt;</code
+        >
+      </dt>
+      <dd>
+        Necessary information characters and internet explorer compatibility .
+        You don't really need to touch any of this, just make sure it's
+        included.
+      </dd>
+
+      <dt>
+        <code>
+          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+          initial-scale=1.0&quot;&gt;
+        </code>
+      </dt>
+      <dd>
+        This defines the default width and scaling properties of the page.
+        Without this the page would not attempt to scale font sizes or width for
+        other screen sizes.
+      </dd>
+
+      <dt>
+        <code>
+          &lt;meta name=&quot;description&quot; content=&quot;The description of
+          this page&quot;&gt;
+        </code>
+      </dt>
+      <dd>
+        The description of the page, which will show up as the text in search
+        results under the title (not always though. Sometimes Google picks its
+        own description based on relevance)
+      </dd>
+
+      <dt><code> &lt;title&gt;The title of this page&lt;/title&gt; </code></dt>
+      <dd>
+        The title of the page that shows up in the tab as the name of the page,
+        as well as the title in search results.
+      </dd>
+
+      <dt><code> &lt;body&gt; &lt;/body&gt; </code></dt>
+      <dd>
+        Where the magic happens! The visible content of the page. There should
+        only be one body.
+      </dd>
+    </dl>
+
+    <h2>Content Sections</h2>
+    The different elements that make up the main sections of a page. Remember
+    that most of these don't add their own visual effects, we need CSS to do
+    that. And if you were to use an article where an aside should be, no alarms
+    would be sound. HTML is very forgiving, but it's our job to make sure we use
+    the right semantic elements for accessibility and so the browser understands
+    our intentions.
+
+    <dl>
+      <dt><code> &lt;div&gt; &lt;/div&gt; </code></dt>
+      <dd>
+        There was a time not too long ago where everything in HTML was DIVs,
+        short for division. You could write a whole HTML page in divs. And then
+        came HTML5 and semantic HTML, meant to be readable, easier to
+        understand, and accessibility. Now, divs should be a last resort when no
+        other tag really makes sense.
+      </dd>
+      <dt>
+        <code> &lt;header&gt;&lt;/header&gt; </code>
+      </dt>
+      <dd>
+        A semantic element that represents that introductory content of a page,
+        including things like a logo, search bar, navigation, etc. Not to be
+        confused with the <code> &lt;head&gt;</code> tag, this tag should still
+        be used within the body tag and is for structuring content.
+      </dd>
+
+      <dt>
+        <code> &lt;main&gt;&lt;/main&gt;</code>
+      </dt>
+      <dd>
+        The main content of the page. It would normally be a sibling to the
+        header and footer tags. It's also good to have this for accessibility so
+        that a user can easily skip to the main content of the page.
+      </dd>
+      <dt>
+        <code>&lt;footer&gt;&lt;/footer&gt;</code>
+      </dt>
+      <dd>
+        Typically used for the information at the bottom of a web page after the
+        main content.
+      </dd>
+
+      <dt>
+        <code
+          >&lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;,
+          &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt;,
+          &lt;h6&gt;&lt;/h6&gt;</code
+        >
+      </dt>
+      <dd>
+        Section headings. It's important to remember that there should only be
+        one h1 per page, and that the headings need to follow a logical
+        structure, ie don't jump from h2 to h4. A new section can start the
+        order over again beginning with h2. Only jump to a new heading level if
+        that content could be considered a subheading of the previous heading.
+        <a
+          href="https://docs.google.com/presentation/d/1aPwaCCms02BuC5wiQjZXQ2ZJiKnEc7HTxh4rEWOX_VQ/edit#slide=id.g201901e9fd4_0_15"
+          target="_blank"
+        >
+          hierarchy example</a
+        >
+      </dd>
+
+      <dt><code> &lt;section&gt;&lt;/section&gt;</code></dt>
+      <dd>Semantic replacement for a div, defines a new section of the page</dd>
+
+      <dt><code> &lt;article&gt;&lt;/article&gt;</code></dt>
+      <dd>
+        Self contained composition of related information such as a blog post,
+        product, social media post, etc. Usually seen as multiple, similar
+        article elements in a list
+      </dd>
+
+      <dt><code> &lt;aside&gt;&lt;/aside&gt;</code></dt>
+      <dd>
+        Represents content that is only slightly related to the main content,
+        like content you would see in a side bar or an ad for more "related"
+        content.
+      </dd>
+
+      <dt><code> &lt;nav&gt;&lt;/nav&gt;</code></dt>
+      <dd>
+        Used to contain navigation. This should be used for all types of
+        navigation, like the navigation the top of the page or in the footer,
+        bread crumbs, or sub navigations.
+      </dd>
+    </dl>
+
+    <h2>Text Formatting</h2>
+    <dl>
+      <dt><code> &lt;p&gt;&lt;/p&gt;</code></dt>
+      <dd>Represents a paragraph of text</dd>
+
+      <dt><code>&lt;br&gt;</code></dt>
+      <dd>
+        Represents a line break. One of the few "void" tags that doesn't need a
+        separate closing tag
+      </dd>
+
+      <dt><code> &lt;b&gt;&lt;/b&gt;</code></dt>
+      <dd>For <b>bold text</b> you want to emphasize</dd>
+
+      <dt><code> &lt;i&gt;&lt;/i&gt;</code></dt>
+      <dd>For <i>italic text</i> you want to emphasize</dd>
+
+      <dt><code> &lt;s&gt;&lt;/s&gt;</code></dt>
+      <dd>For text you want to <s>strike out</s></dd>
+
+      <dt><code>&lt;q&gt;&lt;/q&gt;</code></dt>
+      <dd>For a short quote</dd>
+
+      <dt><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code></dt>
+      <dd>
+        For a multi-line quote you want to give more emphasis to or call out
+      </dd>
+
+      <dt><code>&lt;ul&gt;&lt;/ul&gt;</code></dt>
+      <dd>
+        Unordered list. Used as the container for a bulleted list along with
+        list items.
+      </dd>
+
+      <dt><code>&lt;ol&gt;&lt;/ol&gt;</code></dt>
+      <dd>
+        Ordered list. Used as the container for a numbered list along with list
+        items.
+      </dd>
+
+      <dt><code>&lt;menu&gt;&lt;/menu&gt;</code></dt>
+      <dd>
+        The semantic version of <code>&lt;ul&gt;</code>. This will also create a
+        bulleted list but is meant to be used for lists of links or navigation
+        items like what you would find in a website header.
+      </dd>
+
+      <dt><code>&lt;li&gt;&lt;/li&gt;</code></dt>
+      <dd>
+        List item. Must be used within
+        <code>&lt;ul&gt; &lt;ol&gt; or &lt;menu&gt; </code>
+      </dd>
+
+      <dt>
+        <pre>
+    &lt;dl&gt;
+      &lt;dt&gt;&lt;/dt&gt;
+      &lt;dd&gt;&lt;/dd&gt;
+    &lt;/dl&gt;</pre
+        >
+      </dt>
+
+      <dd>
+        Description List, containing a description term and description
+        definition. These are the elements I used to make this very list. Meant
+        for defining terms and their definitions. Multiple terms and definitions
+        can be contained in one list.
+      </dd>
+
+      <dt>
+        <code
+          >&lt;figure&gt;&lt;/figure&gt; and
+          &lt;figcaption&gt;&lt;/figcaption&gt;</code
+        >
+      </dt>
+      <dd>
+        Used for content that has a caption of some sort like an image, gallery,
+        testimonials, or carousel. figcaption nests inside of figure
+      </dd>
+    </dl>
+
+    <h2>Media</h2>
+    <dl>
+      <dt>
+        <code
+          >&lt;img src=&quot;file-name.png&quot; alt=&quot;A description of this
+          image&quot;&gt;</code>
+      </dt>
+      <dd>
+        For showing an image on the page. The "src" attribute must be included
+        and reference the correct file path to the image. "Alt" text that
+        describes the image is crucial to have for accessibility purpose.
+      </dd>
+    </dl>
+
+    <h2>Interactive Content</h2>
+
+    <dl></dl>
+  </body>
+</html>

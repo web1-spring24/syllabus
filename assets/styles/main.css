@@ -91,7 +91,16 @@ h3 a:hover {
   cursor: default;
 }
 
-code {
+code, pre {
   background-color: #EDEDED;
   padding: 5px 10px;
+}
+
+.back {
+  margin-bottom:20px;
+  display: inline-block;
+}
+
+dd {
+  margin: 5px 0px 40px 0px;
 }
