@@ -157,6 +157,18 @@
         as well as the title in search results.
       </dd>
 
+      <dt>
+        <code>
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+        </code>
+      </dt>
+      <dd>
+        Links related documents to the current document in the head tag. Not to
+        be confused with hyperlinks on a page. It's mostly used to reference
+        stylesheets, and also favicons (the icon in the corner of a tab). You
+        must reference the correct file path via href.
+      </dd>
+
       <dt><code> &lt;body&gt; &lt;/body&gt; </code></dt>
       <dd>
         Where the magic happens! The visible content of the page. There should
@@ -265,10 +277,29 @@
       </dd>
 
       <dt><code> &lt;b&gt;&lt;/b&gt;</code></dt>
-      <dd>For <b>bold text</b> you want to emphasize</dd>
+      <dd>For <b>bold text</b> formatting</dd>
+
+      <dt>
+        <code> &lt;strong&gt; &lt;/strong&gt; </code>
+      </dt>
+      <dd>
+        The semantic alternative to bold. For text that has a strong importance.
+        The difference between this and bold is subtle. Bold is just formatting
+        and strong is semantic. If you are trying to single that a section of
+        text is important, use strong.
+      </dd>
 
       <dt><code> &lt;i&gt;&lt;/i&gt;</code></dt>
-      <dd>For <i>italic text</i> you want to emphasize</dd>
+      <dd>For <i>italic text</i> formatting.</dd>
+
+      <dt><code> &lt;em&gt; &lt;/em&gt; </code></dt>
+      <dd>
+        Emphasis, the semantic version of italic. The difference between this
+        and italic is subtle. You're supposed to use this tag for text you want
+        to emphasize, like "Do your homework, <em>now!!</em>" and italic for
+        text like proper names. Italic is just formatting and emphasis is
+        semantic. If you are trying to emphasize a section of text, use em.
+      </dd>
 
       <dt><code> &lt;s&gt;&lt;/s&gt;</code></dt>
       <dd>For text you want to <s>strike out</s></dd>
@@ -332,6 +363,15 @@
         Used for content that has a caption of some sort like an image, gallery,
         testimonials, or carousel. figcaption nests inside of figure
       </dd>
+
+      <dt>
+        <code> &lt;span&gt; &lt;/span&gt; </code>
+      </dt>
+      <dd>
+        Similar to div for inline elements like text, it doesn't hold any mean
+        on it's own but can be used as a container for styling when nothing else
+        works.
+      </dd>
     </dl>
 
     <h2>Media</h2>
@@ -339,17 +379,170 @@
       <dt>
         <code
           >&lt;img src=&quot;file-name.png&quot; alt=&quot;A description of this
-          image&quot;&gt;</code>
+          image&quot;&gt;</code
+        >
       </dt>
       <dd>
         For showing an image on the page. The "src" attribute must be included
         and reference the correct file path to the image. "Alt" text that
         describes the image is crucial to have for accessibility purpose.
       </dd>
+
+      <dt>
+        <code>
+          &lt;audio controls&gt; &lt;source src=&quot;music.mp3&quot;
+          type=&quot;audio/mpeg&quot;&gt; &lt;/audio&gt;
+        </code>
+      </dt>
+      <dd>
+        Adds an audio player to the website. "Controls" is an attribute that
+        makes controls visible. "Autoplay" and "muted" are attributes that can
+        also be added.
+      </dd>
     </dl>
 
-    <h2>Interactive Content</h2>
+    <dt>
+      <pre>
+&lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;
+  &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;</pre
+      >
+    </dt>
+    <dd>
+      Adds a video player to the page. According to W3Schools, width and height
+      should be added to avoid page flickering issues. If you wanted to embed a
+      video from YouTube, Tiktok, or others, often those sites have built-in
+      embed codes you could copy and paste. Autoplay and muted are attributes
+      also available here.
+    </dd>
 
-    <dl></dl>
+    <h2>Interactive Content</h2>
+    <p>
+      Only a few HTML tags have the ability to do something "on click" without
+      Javascript getting involved.
+    </p>
+    <dl>
+      <dt>
+        <code>
+          &lt;a href=&quot;https://www.google.com/&quot;&gt; Go to Google
+          &lt;/a&gt;
+        </code>
+      </dt>
+      <dd>
+        Creates a link to another page. If the link goes to your own website,
+        you can include the relative path from the source rather than the
+        absolute url.
+        <a
+          href="https://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/"
+          target="_blank"
+          >More info on relative vs absolute url paths</a
+        >. If you wanted to make sure a link opened in a new tab, you would add
+        the attribute <code>target="_blank"</code>. You can nest other elements,
+        like an image, inside of a link tag. You should make link text
+        descriptive of where the page will lead. Avoid "click here" or "learn
+        more".
+      </dd>
+      <dt><code>&lt;button&gt;Click Me!&lt;/button&gt;</code></dt>
+      <dd>
+        A button. You should use buttons for interactive content that performs
+        an action on a page, and links for going to a new page. Styling doesn't
+        play a factor as much as functionality does. A lot of developers make
+        the mistake of making links that look like a button use the button tag.
+        A button won't do anything on its own without some javascript
+        controlling it, but I figured this section made the most sense.
+      </dd>
+
+      <dt>
+        <pre>
+&lt;details&gt;
+  &lt;summary&gt;A Question&lt;/summary&gt;
+  An answer
+&lt;/details&gt;</pre
+        >
+      </dt>
+      <dd>
+        Summary and detail tags can be used together to create an "accordion"
+        style that opens more information on click. The preview text goes in
+        summary and the rest of the text is in the parent detail tag.
+      </dd>
+    </dl>
+    <h2>Forms</h2>
+    <p>
+      There are a lot of different input types and I'm only listing some of
+      them.
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+        target="_blank"
+        >See all input types.</a
+      >
+    </p>
+    <dl>
+      <dt><code>&lt;form&gt;&lt;/form&gt;</code></dt>
+
+      <dd>
+        All form fields should be nested inside this tag. The attribute "action"
+        should be added to process the form data, but that's beyond the scope of
+        Web 1.
+      </dd>
+      <dt>
+        <code
+          >&lt;label for=&quot;cheese&quot;&gt;Do you like
+          cheese?&lt;/label&gt;</code
+        >
+      </dt>
+      <dd>
+        The label for an input field. The "for" attribute is important to
+        include to connect the label to an input field. The "for" attribute will
+        be connected via the corresponding input's ID.
+      </dd>
+
+      <dt>
+        <code
+          >&lt;input type=&quot;text&quot; id="(unique ID must be
+          added)"&gt;</code
+        >
+      </dt>
+      <dd>
+        There are a variety of input tags, and they are differentiated by their
+        "type" attribute. Text is a simple text input. Note that input tags are
+        void tags, meaning they are self closing and do not need
+        <code>&lt;/input&gt;</code>.
+        <b>All inputs need a unique ID to connect them to their labels</b>
+      </dd>
+      <dt>
+        <code
+          >&lt;input type=&quot;password&quot; id="(unique ID must be added)"
+          &gt;</code
+        >
+      </dt>
+      <dd>
+        Similar to a text input, but it makes the text into bullets as you type
+        •••
+      </dd>
+
+      <dt>
+        <code>
+          &lt;input type=&quot;email&quot; id=&quot;(unique id must be
+          added)&quot;&gt;
+        </code>
+      </dt>
+      <dd>
+        The same as text input, but it is automatically validated to make sure
+        it's email format on submit
+      </dd>
+
+      <dt>
+        <code>
+          &lt;input type=&quot;checkbox&quot; id=&quot;(unique ID must be
+          added)&quot;&gt;
+        </code>
+      </dt>
+      <dd>
+        Creates a checkbox. Checkboxes are used to turn a single value on or
+        off, where radio buttons are used to select one value of a list of
+        options. Multiple checkboxes and their labels should be nested inside of
+        a fieldset.
+      </dd>
+    </dl>
   </body>
 </html>
