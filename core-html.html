@@ -93,6 +93,7 @@
     </pre>
 
     <dl>
+      <h3>Doctype</h3>
       <dt><code>&lt;!DOCTYPE HTML&gt;</code></dt>
       <dd>
         Defines the document type. Really only used for HTML code. Needs to be
@@ -107,6 +108,7 @@
         tag.
       </dd>
       <dt>
+        <h3>Head</h3>
         <code>&lt;head&gt;&lt;/head&gt; </code>
       </dt>
       <dd>
@@ -115,6 +117,7 @@
         be confused with the header tag.
       </dd>
       <dt>
+        <h3>Meta tags</h3>
         <code
           >&lt;meta charset=&quot;UTF-8&quot;&gt; <br />&lt;meta
           http-equiv=&quot;X-UA-Compatible&quot;
@@ -151,13 +154,17 @@
         own description based on relevance)
       </dd>
 
-      <dt><code> &lt;title&gt;The title of this page&lt;/title&gt; </code></dt>
+      <dt>
+        <h3>Title</h3>
+        <code> &lt;title&gt;The title of this page&lt;/title&gt; </code>
+      </dt>
       <dd>
         The title of the page that shows up in the tab as the name of the page,
         as well as the title in search results.
       </dd>
 
       <dt>
+        <h3>Stylesheet reference</h3>
         <code>
           &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
         </code>
@@ -169,7 +176,10 @@
         must reference the correct file path via href.
       </dd>
 
-      <dt><code> &lt;body&gt; &lt;/body&gt; </code></dt>
+      <dt>
+        <h3>Body</h3>
+        <code> &lt;body&gt; &lt;/body&gt; </code>
+      </dt>
       <dd>
         Where the magic happens! The visible content of the page. There should
         only be one body.
@@ -185,7 +195,10 @@
     our intentions.
 
     <dl>
-      <dt><code> &lt;div&gt; &lt;/div&gt; </code></dt>
+      <dt>
+        <h3>Div</h3>
+        <code> &lt;div&gt; &lt;/div&gt; </code>
+      </dt>
       <dd>
         There was a time not too long ago where everything in HTML was DIVs,
         short for division. You could write a whole HTML page in divs. And then
@@ -194,6 +207,7 @@
         other tag really makes sense.
       </dd>
       <dt>
+        <h3>Header</h3>
         <code> &lt;header&gt;&lt;/header&gt; </code>
       </dt>
       <dd>
@@ -204,6 +218,7 @@
       </dd>
 
       <dt>
+        <h3>Main</h3>
         <code> &lt;main&gt;&lt;/main&gt;</code>
       </dt>
       <dd>
@@ -212,6 +227,7 @@
         that a user can easily skip to the main content of the page.
       </dd>
       <dt>
+        <h3>Footer</h3>
         <code>&lt;footer&gt;&lt;/footer&gt;</code>
       </dt>
       <dd>
@@ -220,10 +236,20 @@
       </dd>
 
       <dt>
-        <code
-          >&lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;,
-          &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt;,
-          &lt;h6&gt;&lt;/h6&gt;</code
+        <h3>Headings</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</pre
         >
       </dt>
       <dd>
@@ -240,24 +266,36 @@
         >
       </dd>
 
-      <dt><code> &lt;section&gt;&lt;/section&gt;</code></dt>
+      <dt>
+        <h3>Section</h3>
+        <code> &lt;section&gt;&lt;/section&gt;</code>
+      </dt>
       <dd>Semantic replacement for a div, defines a new section of the page</dd>
 
-      <dt><code> &lt;article&gt;&lt;/article&gt;</code></dt>
+      <dt>
+        <h3>Article</h3>
+        <code> &lt;article&gt;&lt;/article&gt;</code>
+      </dt>
       <dd>
         Self contained composition of related information such as a blog post,
         product, social media post, etc. Usually seen as multiple, similar
         article elements in a list
       </dd>
 
-      <dt><code> &lt;aside&gt;&lt;/aside&gt;</code></dt>
+      <dt>
+        <h3>Aside</h3>
+        <code> &lt;aside&gt;&lt;/aside&gt;</code>
+      </dt>
       <dd>
         Represents content that is only slightly related to the main content,
         like content you would see in a side bar or an ad for more "related"
         content.
       </dd>
 
-      <dt><code> &lt;nav&gt;&lt;/nav&gt;</code></dt>
+      <dt>
+        <h3>Navigation</h3>
+        <code> &lt;nav&gt;&lt;/nav&gt;</code>
+      </dt>
       <dd>
         Used to contain navigation. This should be used for all types of
         navigation, like the navigation the top of the page or in the footer,
@@ -267,19 +305,29 @@
 
     <h2>Text Formatting</h2>
     <dl>
-      <dt><code> &lt;p&gt;&lt;/p&gt;</code></dt>
+      <dt>
+        <h3>Paragraph</h3>
+        <code> &lt;p&gt;&lt;/p&gt;</code>
+      </dt>
       <dd>Represents a paragraph of text</dd>
 
-      <dt><code>&lt;br&gt;</code></dt>
+      <dt>
+        <h3>Line Break</h3>
+        <code>&lt;br&gt;</code>
+      </dt>
       <dd>
         Represents a line break. One of the few "void" tags that doesn't need a
         separate closing tag
       </dd>
 
-      <dt><code> &lt;b&gt;&lt;/b&gt;</code></dt>
+      <dt>
+        <h3>Bold text</h3>
+        <code> &lt;b&gt;&lt;/b&gt;</code>
+      </dt>
       <dd>For <b>bold text</b> formatting</dd>
 
       <dt>
+        <h3>Strong Text</h3>
         <code> &lt;strong&gt; &lt;/strong&gt; </code>
       </dt>
       <dd>
@@ -289,10 +337,16 @@
         text is important, use strong.
       </dd>
 
-      <dt><code> &lt;i&gt;&lt;/i&gt;</code></dt>
+      <dt>
+        <h3>Italic Text</h3>
+        <code> &lt;i&gt;&lt;/i&gt;</code>
+      </dt>
       <dd>For <i>italic text</i> formatting.</dd>
 
-      <dt><code> &lt;em&gt; &lt;/em&gt; </code></dt>
+      <dt>
+        <h3>Emphasized text</h3>
+        <code> &lt;em&gt; &lt;/em&gt; </code>
+      </dt>
       <dd>
         Emphasis, the semantic version of italic. The difference between this
         and italic is subtle. You're supposed to use this tag for text you want
@@ -301,43 +355,112 @@
         semantic. If you are trying to emphasize a section of text, use em.
       </dd>
 
-      <dt><code> &lt;s&gt;&lt;/s&gt;</code></dt>
+      <dt>
+        <h3>Strike through text</h3>
+        <code> &lt;s&gt;&lt;/s&gt;</code>
+      </dt>
       <dd>For text you want to <s>strike out</s></dd>
 
-      <dt><code>&lt;q&gt;&lt;/q&gt;</code></dt>
+      <dt>
+        <h3>Short quote</h3>
+        <q>To be, or not to be, that is the question</q><br />
+        <code>&lt;q&gt;&lt;/q&gt;</code>
+      </dt>
       <dd>For a short quote</dd>
 
-      <dt><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code></dt>
+      <dt>
+        <h3>Block Quote</h3>
+        <blockquote>
+          To sleep, perchance to dream—ay, there's the rub: For in that sleep of
+          death what dreams may come, When we have shuffled off this mortal
+          coil, Must give us pause—there's the respect That makes calamity of so
+          long life.
+        </blockquote>
+        <br />
+        <code>&lt;blockquote&gt;&lt;/blockquote&gt;</code>
+      </dt>
       <dd>
         For a multi-line quote you want to give more emphasis to or call out
       </dd>
 
-      <dt><code>&lt;ul&gt;&lt;/ul&gt;</code></dt>
+      <dt>
+        <h3>Unordered List</h3>
+        <ul>
+          <li>Bread</li>
+          <li>Peanut Butter</li>
+          <li>Jelly</li>
+        </ul>
+        <pre>
+  &lt;ul&gt;
+    &lt;li&gt;Bread&lt;/li&gt;
+    &lt;li&gt;Peanut Butter&lt;/li&gt;
+    &lt;li&gt;Jelly&lt;/li&gt;
+  &lt;/ul&gt;</pre
+        >
+      </dt>
       <dd>
         Unordered list. Used as the container for a bulleted list along with
         list items.
       </dd>
 
-      <dt><code>&lt;ol&gt;&lt;/ol&gt;</code></dt>
+      <dt>
+        <h3>Ordered List</h3>
+        <ol>
+          <li>Get two pieces of bread.</li>
+          <li>
+            Using a butter knife, slather peanut butter on one side of piece
+          </li>
+          <li>Then, slather jelly on one side of the other piece</li>
+          <li>combine pieces of bread.</li>
+        </ol>
+        <pre>
+  &lt;ol&gt;
+    &lt;li&gt;Get two pieces of bread.&lt;/li&gt;
+    &lt;li&gt;Using a butter knife, slather peanut butter on one side of piece&lt;/li&gt;
+    &lt;li&gt;Then, slather jelly on one side of the other piece&lt;/li&gt;
+    &lt;li&gt;combine pieces of bread.&lt;/li&gt;
+   &lt;/ol&gt;</pre
+        >
+      </dt>
       <dd>
         Ordered list. Used as the container for a numbered list along with list
         items.
       </dd>
 
-      <dt><code>&lt;menu&gt;&lt;/menu&gt;</code></dt>
+      <dt>
+        <h3>Menu</h3>
+        <menu>
+          <li><a href="/volunteer.html">Volunteer</a></li>
+          <li><a href="/adopt.html">Adopt</a></li>
+          <li><a href="/foster.html">Foster</a></li>
+          <li><a href="/donate.html">Donate</a></li>
+        </menu>
+        <pre>
+ &lt;menu&gt;
+  &lt;li&gt;&lt;a href=&quot;/volunteer.html&quot;&gt;Volunteer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/adopt.html&quot;&gt;Adopt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/foster.html&quot;&gt;Foster&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/donate.html&quot;&gt;Donate&lt;/a&gt;&lt;/li&gt;
+&lt;/menu&gt;</pre
+        >
+      </dt>
       <dd>
         The semantic version of <code>&lt;ul&gt;</code>. This will also create a
         bulleted list but is meant to be used for lists of links or navigation
         items like what you would find in a website header.
       </dd>
 
-      <dt><code>&lt;li&gt;&lt;/li&gt;</code></dt>
+      <dt>
+        <h3>List item</h3>
+        <code>&lt;li&gt;&lt;/li&gt;</code>
+      </dt>
       <dd>
         List item. Must be used within
         <code>&lt;ul&gt; &lt;ol&gt; or &lt;menu&gt; </code>
       </dd>
 
       <dt>
+        <h3>Description List, Term, and Definition</h3>
         <pre>
     &lt;dl&gt;
       &lt;dt&gt;&lt;/dt&gt;
@@ -354,17 +477,7 @@
       </dd>
 
       <dt>
-        <code
-          >&lt;figure&gt;&lt;/figure&gt; and
-          &lt;figcaption&gt;&lt;/figcaption&gt;</code
-        >
-      </dt>
-      <dd>
-        Used for content that has a caption of some sort like an image, gallery,
-        testimonials, or carousel. figcaption nests inside of figure
-      </dd>
-
-      <dt>
+        <h3>Span</h3>
         <code> &lt;span&gt; &lt;/span&gt; </code>
       </dt>
       <dd>
@@ -372,14 +485,77 @@
         on it's own but can be used as a container for styling when nothing else
         works.
       </dd>
+
+      <dt>
+        <h3>Tables</h3>
+        <table>
+          <tr>
+            <th>Plan name</th>
+            <th>Cost</th>
+            <th>Benefits</th>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>Free</td>
+            <td>1 Account</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>$10/month</td>
+            <td>3 Account</td>
+          </tr>
+          <tr>
+            <td>Enterprise</td>
+            <td>$50/month</td>
+            <td>Unlimited Accounts</td>
+          </tr>
+        </table>
+
+        <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+     &lt;th&gt;Plan name&lt;/th&gt;
+     &lt;th&gt;Cost&lt;/th&gt;
+     &lt;th&gt;Benefits&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td&gt;Basic&lt;/td&gt;
+    &lt;td&gt;Free&lt;/td&gt;
+    &lt;td&gt;1 Account&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;td&gt;Premium&lt;/td&gt;
+     &lt;td&gt;$10/month&lt;/td&gt;
+    &lt;td&gt;3 Account&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;td&gt;Enterprise&lt;/td&gt;
+     &lt;td&gt;$50/month&lt;/td&gt;
+    &lt;td&gt;Unlimited Accounts&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </pre>
+      </dt>
+      <dd>
+        Tables used to be used for layout purposes — creating rows and columns
+        for content — but now we have much better styling options for that with
+        CSS. So tables are used mostly only for their intended usage, displaying
+        data. I rely on table HTML for my <a href="rubric.html">rubric page</a>
+        TR means "table row", Th means "table head" and Td means "table data". Use Tr to define a new row, th if the content is a header, and td if the content is data.
+      </dd>
     </dl>
 
     <h2>Media</h2>
     <dl>
       <dt>
+        <h3>Image</h3>
+        <img
+          src="https://via.placeholder.com/250.png"
+          alt="placeholder image"
+        /><br />
         <code
-          >&lt;img src=&quot;file-name.png&quot; alt=&quot;A description of this
-          image&quot;&gt;</code
+          >&lt;img src=&quot;https://via.placeholder.com/250.png&quot;
+          alt=&quot;placeholder image&quot;&gt;</code
         >
       </dt>
       <dd>
@@ -389,6 +565,9 @@
       </dd>
 
       <dt>
+        <h3>Audio</h3>
+        <audio controls><source src="music.mp3" type="audio/mpeg" /></audio
+        ><br />
         <code>
           &lt;audio controls&gt; &lt;source src=&quot;music.mp3&quot;
           type=&quot;audio/mpeg&quot;&gt; &lt;/audio&gt;
@@ -399,23 +578,46 @@
         makes controls visible. "Autoplay" and "muted" are attributes that can
         also be added.
       </dd>
-    </dl>
 
-    <dt>
-      <pre>
+      <dt>
+        <h3>Video</h3>
+        <video width="320" height="240" controls>
+          <source src="movie.mp4" type="video/mp4" />
+        </video>
+        <pre>
 &lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;
   &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;
 &lt;/video&gt;</pre
-      >
-    </dt>
-    <dd>
-      Adds a video player to the page. According to W3Schools, width and height
-      should be added to avoid page flickering issues. If you wanted to embed a
-      video from YouTube, Tiktok, or others, often those sites have built-in
-      embed codes you could copy and paste. Autoplay and muted are attributes
-      also available here.
-    </dd>
-
+        >
+      </dt>
+      <dd>
+        Adds a video player to the page. According to W3Schools, width and
+        height should be added to avoid page flickering issues. If you wanted to
+        embed a video from YouTube, Tiktok, or others, often those sites have
+        built-in embed codes you could copy and paste. Autoplay and muted are
+        attributes also available here.
+      </dd>
+      <dt>
+        <h3>Figure and Caption</h3>
+        <figure>
+          <img
+            src="https://via.placeholder.com/250.png"
+            alt="placeholder image"
+          />
+          <figcaption>A placeholder image</figcaption>
+        </figure>
+        <pre>
+&lt;figure&gt;
+    &lt;img src=&quot;https://via.placeholder.com/250.png&quot; alt=&quot;placeholder image&quot;&gt;
+    &lt;figcaption&gt;A placeholder image&lt;/figcaption&gt;
+&lt;/figure&gt;</pre
+        >
+      </dt>
+      <dd>
+        Used for content that has a caption of some sort like an image, gallery,
+        testimonials, or carousel. figcaption nests inside of figure
+      </dd>
+    </dl>
     <h2>Interactive Content</h2>
     <p>
       Only a few HTML tags have the ability to do something "on click" without
@@ -423,6 +625,10 @@
     </p>
     <dl>
       <dt>
+        <h3>Links</h3>
+        <p>
+          <a href="https://www.google.com/"> Go to Google </a>
+        </p>
         <code>
           &lt;a href=&quot;https://www.google.com/&quot;&gt; Go to Google
           &lt;/a&gt;
@@ -442,17 +648,27 @@
         descriptive of where the page will lead. Avoid "click here" or "learn
         more".
       </dd>
-      <dt><code>&lt;button&gt;Click Me!&lt;/button&gt;</code></dt>
+      <dt>
+        <h3>Button</h3>
+        <p><button>Click me!</button></p>
+        <code>&lt;button&gt;Click Me!&lt;/button&gt;</code>
+      </dt>
       <dd>
         A button. You should use buttons for interactive content that performs
         an action on a page, and links for going to a new page. Styling doesn't
         play a factor as much as functionality does. A lot of developers make
         the mistake of making links that look like a button use the button tag.
         A button won't do anything on its own without some javascript
-        controlling it, but I figured this section made the most sense.
+        controlling it, but I figured this section made the most sense. If a
+        button has the type="submit" it can be used to submit a form.
       </dd>
 
       <dt>
+        <h3>Detail and Summary (Accordion)</h3>
+        <details>
+          <summary>A Question</summary>
+          An answer
+        </details>
         <pre>
 &lt;details&gt;
   &lt;summary&gt;A Question&lt;/summary&gt;
@@ -477,7 +693,10 @@
       >
     </p>
     <dl>
-      <dt><code>&lt;form&gt;&lt;/form&gt;</code></dt>
+      <dt>
+        <h3>Form</h3>
+        <code>&lt;form&gt;&lt;/form&gt;</code>
+      </dt>
 
       <dd>
         All form fields should be nested inside this tag. The attribute "action"
@@ -485,6 +704,8 @@
         Web 1.
       </dd>
       <dt>
+        <h3>Label</h3>
+        <label for="cheese">Do you like cheese?</label><br />
         <code
           >&lt;label for=&quot;cheese&quot;&gt;Do you like
           cheese?&lt;/label&gt;</code
@@ -497,9 +718,30 @@
       </dd>
 
       <dt>
-        <code
-          >&lt;input type=&quot;text&quot; id="(unique ID must be
-          added)"&gt;</code
+        <h3>Fieldset and Legend</h3>
+        <fieldset>
+          <legend>Which of the following books have you read?</legend>
+        </fieldset>
+        <pre>
+&lt;fieldset&gt;
+  &lt;legend&gt;Which of the following books have you read?&lt;/legend&gt;
+&lt;/fieldset&gt;
+        </pre>
+      </dt>
+      <dd>
+        A fieldset is for a group of related inputs and their labels. It's
+        useful for groups of radio buttons and checkboxes, or other groupings
+        within a larger form. The legend is the fieldset's label.
+      </dd>
+      <dt>
+        <h3>Text input</h3>
+        <p>
+          <label for="name">What is your name?</label>
+          <input type="textbox" id="name" name="name" />
+        </p>
+        <pre>
+&lt;label for=&quot;name&quot;&gt;What is your name?&lt;/label&gt;
+&lt;input type=&quot;textbox&quot; id=&quot;name&quot; name=&quot;name&quot; /&gt;</pre
         >
       </dt>
       <dd>
@@ -507,12 +749,16 @@
         "type" attribute. Text is a simple text input. Note that input tags are
         void tags, meaning they are self closing and do not need
         <code>&lt;/input&gt;</code>.
-        <b>All inputs need a unique ID to connect them to their labels</b>
+        <b>All inputs need a unique ID to connect them to their labels.</b> The
+        name, id, and value can be anything.
       </dd>
       <dt>
-        <code
-          >&lt;input type=&quot;password&quot; id="(unique ID must be added)"
-          &gt;</code
+        <h3>Password Input</h3>
+        <label for="secret">Tell me a secret</label>
+        <input type="password" id="secret" name="secret" />
+        <pre>
+&lt;label for=&quot;secret&quot;&gt;Tell me a secret&lt;/label&gt;
+&lt;input type=&quot;password&quot; id=&quot;secret&quot; name=&quot;secret&quot; /&gt;</pre
         >
       </dt>
       <dd>
@@ -521,6 +767,7 @@
       </dd>
 
       <dt>
+        <h3>Email input</h3>
         <code>
           &lt;input type=&quot;email&quot; id=&quot;(unique id must be
           added)&quot;&gt;
@@ -532,6 +779,7 @@
       </dd>
 
       <dt>
+        <h3>Checkbox Input</h3>
         <code>
           &lt;input type=&quot;checkbox&quot; id=&quot;(unique ID must be
           added)&quot;&gt;
@@ -541,7 +789,171 @@
         Creates a checkbox. Checkboxes are used to turn a single value on or
         off, where radio buttons are used to select one value of a list of
         options. Multiple checkboxes and their labels should be nested inside of
-        a fieldset.
+        a fieldset. Adding the attribute "checked" will check the box by
+        default. A group of checkboxes should belong to fieldset. The checkboxes
+        within the field set should share the same "name" attribute to connect
+        them. Here's an example:
+        <fieldset>
+          <legend>Which of the following books have you read?</legend>
+
+          <input
+            type="checkbox"
+            name="books"
+            id="books-catcher"
+            name="catcher"
+          />
+          <label for="books-catcher">Catcher in the Rye</label>
+          <br />
+          <input
+            type="checkbox"
+            name="books"
+            id="books-mockingbird"
+            name="mockingbird"
+          />
+          <label for="books-mockingbird">To Kill a Mockingbird</label>
+          <br />
+          <input
+            type="checkbox"
+            name="books"
+            id="books-outsider"
+            name="outsiders"
+          />
+          <label for="books-outsiders">The Outsiders</label>
+        </fieldset>
+        <pre>
+&lt;fieldset&gt;
+ &lt;legend&gt;Which of the following books have you read?&lt;/legend&gt;
+  
+ &lt;input type=&quot;checkbox&quot; name=&quot;books&quot; id=&quot;books-catcher&quot; name=&quot;catcher&quot; /&gt;
+ &lt;label for=&quot;books-catcher&quot;&gt;Catcher in the Rye&lt;/label&gt;
+ &lt;br&gt;        
+ &lt;input type=&quot;checkbox&quot; name=&quot;books&quot; id=&quot;books-mockingbird&quot; name=&quot;mockingbird&quot;/&gt;
+ &lt;label for=&quot;books-mockingbird&quot;&gt;To Kill a Mockingbird&lt;/label&gt;
+ &lt;br&gt;
+ &lt;input type=&quot;checkbox&quot; name=&quot;books&quot; id=&quot;books-outsider&quot; name=&quot;outsiders&quot;/&gt;
+ &lt;label for=&quot;books-outsiders&quot;&gt;The Outsiders&lt;/label&gt;
+&lt;/fieldset&gt;</pre
+        >
+      </dd>
+
+      <dt>
+        <h3>Radio Input</h3>
+        <fieldset>
+          <legend>Are you a student?</legend>
+
+          <input type="radio" id="student-yes" name="student" value="yes" />
+          <label for="student-yes">Yes</label>
+
+          <input type="radio" name="student" id="student-no" value="no" />
+          <label for="student-no">No</label>
+        </fieldset>
+        <pre>
+  &lt;fieldset&gt;
+    &lt;legend&gt;Are you a student?&lt;/legend&gt;
+
+    &lt;input type=&quot;radio&quot; id=&quot;student-yes&quot; name=&quot;student&quot; value=&quot;yes&quot; /&gt;
+    &lt;label for=&quot;student-yes&quot;&gt;Yes&lt;/label&gt;
+
+    &lt;input type=&quot;radio&quot; name=&quot;student&quot; id=&quot;student-no&quot; value=&quot;no&quot; /&gt;
+    &lt;label for=&quot;student-no&quot;&gt;No&lt;/label&gt;
+  &lt;/fieldset&gt;
+      </pre
+        >
+      </dt>
+      <dd>
+        Radio buttons, for selecting one option in a set of choices. Should
+        usually be inside of a field set. All of the radio buttons in a fieldset
+        should have the same "name" attribute to connect them and make it only
+        possible to select one.
+      </dd>
+
+      <dt>
+        <h3>Search Input</h3>
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" />
+
+        <button>Search</button>
+        <pre>
+&lt;label for=&quot;site-search&quot;&gt;Search the site:&lt;/label&gt;
+&lt;input type=&quot;search&quot; id=&quot;site-search&quot;&gt;
+&lt;button&gt;Search&lt;/button&gt;</pre
+        >
+      </dt>
+      <dd>
+        Search input. This doesn't have any search functionality on its own, you
+        need server side code for that. It's good for accessibility to use this
+        tag for search.
+      </dd>
+
+      <dt>
+        <h3>Select Dropdowns</h3>
+        <label for="pet-select">Choose a pet:</label>
+
+        <select name="pets" id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+        </select>
+        <pre>
+          &lt;label for=&quot;pet-select&quot;&gt;Choose a pet:&lt;/label&gt;
+
+          &lt;select name=&quot;pets&quot; id=&quot;pet-select&quot;&gt;
+            &lt;option value=&quot;&quot;&gt;--Please choose an option--&lt;/option&gt;
+            &lt;option value=&quot;dog&quot;&gt;Dog&lt;/option&gt;
+            &lt;option value=&quot;cat&quot;&gt;Cat&lt;/option&gt;
+            &lt;option value=&quot;hamster&quot;&gt;Hamster&lt;/option&gt;
+            &lt;option value=&quot;parrot&quot;&gt;Parrot&lt;/option&gt;
+            &lt;option value=&quot;spider&quot;&gt;Spider&lt;/option&gt;
+            &lt;option value=&quot;goldfish&quot;&gt;Goldfish&lt;/option&gt;
+          &lt;/select&gt;
+        </pre>
+      </dt>
+      <dd>For selecting one value from a list of values in a dropdown.</dd>
+
+      <dt>
+        <h3>Progress bar</h3>
+        <label for="file">File progress:</label>
+
+        <progress id="file" max="100" value="70">70%</progress>
+        <pre>
+  &lt;label for=&quot;file&quot;&gt;File progress:&lt;/label&gt;
+  &lt;progress id=&quot;file&quot; max=&quot;100&quot; value=&quot;70&quot;&gt; 70% &lt;/progress&gt;
+</pre
+        >
+      </dt>
+      <dd>
+        For showing progress. Max is the max value and value is the current
+        value
+      </dd>
+      <dt>
+        <h3>Text Area</h3>
+        <label for="story">Tell me your life story</label><br />
+        <textarea id="story" rows="15" cols="50"> </textarea>
+        <pre>
+&lt;label for=&quot;story&quot;&gt;Tell me your life story&lt;/label&gt;&lt;br&gt;
+&lt;textarea id=&quot;story&quot; rows=&quot;15&quot; cols=&quot;50&quot;&gt; &lt;/textarea&gt;</pre
+        >
+      </dt>
+      <dd>
+        Text inputs are for just one line. For longer text entry, use textarea.
+        You can set the default size with the rows and cols attributes, but a
+        user can resize this box.
+      </dd>
+
+      <dt>
+        <h3>Submit Button</h3>
+        <button type="submit">Submit</button><br />
+        <code>&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;</code>
+      </dt>
+      <dd>
+        Lastly, to submit a form, you need a submit button (it can say something
+        else like send or complete, or whatever). This like all of the other
+        fields should be inside the form tag. You may also see input
+        type="submit" as a submit button.
       </dd>
     </dl>
   </body>
