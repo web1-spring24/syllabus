@@ -1,0 +1,77 @@
+.red-example {
+
+
+
+    /*Hue, Saturation, Brightness*/
+    color: hsl(0, 100%, 50%)
+}
+
+.font-size-example {
+
+
+    /*with rem */
+    font-size: 4rem
+}
+
+.font-family-example {
+    font-family: 'Times New Roman', serif;
+  }
+
+  .font-weight-example {
+    font-weight: bold;
+    /* or */
+    font-weight: 700;
+  }
+
+  .list-style-example {
+    list-style: square;
+  }
+
+  .line-height-example {
+    line-height: 1.5;
+  }
+
+  .text-align-example {
+    text-align: right;
+  }
+
+  .text-decoration-example {
+    text-decoration: underline dotted red;
+  }
+
+  .width-example {
+    background-color:lightgrey;
+    width: 300px;
+  }
+
+  .height-example {
+    background-color:lightgrey;
+    height: 150px;
+    display: inline-block;
+  }
+
+  .margin-example {
+    background-color:lightgrey;
+    width: 300px;
+    margin:50px auto;
+  }
+
+  .padding-example {
+    background-color:lightgrey;
+    padding: 100px;
+    width: 300px;
+  }
+
+  .position-example {
+    position: relative;
+    left: -150px;
+    top: 50px;
+  }
+
+  .overflow-example {
+    background-color:lightgrey;
+    width: 250px;
+    overflow: scroll;
+    white-space: nowrap;
+    
+  }

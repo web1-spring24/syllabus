@@ -35,6 +35,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/imgs/favicon.png" type="img/png" />
     <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/example-css.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -47,9 +48,450 @@
     <img src="assets/imgs/tcnj-logo.png" /><br />
     <a href="index.html">← Back to Syllabus</a>
     <h1>Core CSS Properties</h1>
-    <p>This is an abbreviated list of what I believe are the core css properties you should know. There are even more than this. 
-      You can see more properties along with detailed examples with this <a href="https://www.w3schools.com/cssref/index.php" target="_blank">CSS property reference offered from W3C Schools</a>.
+    <p>
+      This is an abbreviated list of what I believe are the core css properties
+      you should know. There are even more than this. You can see more
+      properties along with detailed examples with this
+      <a href="https://www.w3schools.com/cssref/index.php" target="_blank"
+        >CSS property reference offered from W3C Schools</a
+      >.
     </p>
-    <p><a href="core-html.html">See the Core HTML Tags page</a></p>
+    <p>
+      Remember, to tell the browser what HTML element to apply a property to,
+      you use selectors.
+      <a
+        href="https://docs.google.com/presentation/d/1bO_Tn8aQ31p1REdlyIrgIaHn-O0_vXs7VBZfNkw9vBY/edit#slide=id.g201582fce54_0_0"
+        >Learn more about selectors from these class slides.</a
+      >
+    </p>
+
+    <p>
+      If you need a reference for HTML tags,
+      <a href="core-html.html">see the Core HTML Tags page</a>
+    </p>
+    <h2>Text styles</h2>
+
+    <dl>
+      <dt>
+        <h3 class="red-example">Color</h3>
+        <pre>
+.red-example {
+  
+  */predefined color*/
+  color: red;
+
+  /*hex code */
+  color: #00ff00;
+ 
+  /*Red, Green, Blue*/
+  color: rgb(0,0,255);
+ 
+ /*RGB with alpha (opacity) */
+  color: rgba(0,0,255, 1);
+
+  /*Hue, Saturation, Brightness*/
+  color: hsl(0, 100%, 50%)
+}
+</pre
+        >
+      </dt>
+      <dd>
+        Changes the color of text. It will affect all of the children of the
+        selector too. It can accept a hex code, predefined color name, rgb,
+        rgba, hsl, or hsla. Adding the "a" means alpha, and this introduces an
+        opacity component. It's standard to usually just use hex code.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/color"
+          target="_blank"
+          >More on color</a
+        >
+      </dd>
+      <dt>
+        <h3 class="font-size-example">Font size</h3>
+        <pre>
+.font-size-example {
+
+  /* With pixels */
+  font-size: 40px;
+
+  /*with rem */
+  font-size: 4rem
+}</pre
+        >
+      </dt>
+      <dd>
+        Controls the size of the font! REM is the preferred unit for font size
+        because it is scalable and accessibility friendly. REM references what
+        the :root font size is to determine what 1 rem equals, so I suggest
+        setting :root { font-size: 10px} in your CSS for easy conversions.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size"
+          target="_blank"
+          >More on font-size</a
+        >
+      </dd>
+
+      <dt>
+        <h3 class="font-family-example">Font Family</h3>
+        <pre>
+.font-family-example {
+  font-family: 'Times New Roman', serif;
+}
+    </pre
+        >
+      </dt>
+      <dd>
+        Font family is for defining a typeface that will be used. There are a
+        few "web safe" fonts that will render on most browsers, like Arial,
+        Helvetica, Times New Roman, etc, but the majority of web developers will
+        end up including the source files for their font directly in their
+        website assets folder. Font-family can accept "fallback" fonts. In our
+        example, this means if the browser can't find the "Times New Roman"
+        font, it will fallback to a generic serif font. Read more on how to add
+        custom fonts to a website (link coming soon).
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family"
+          target="_blank"
+          >More on font-family</a
+        >
+      </dd>
+      <dt>
+        <h3 class="font-weight-example">font weight</h3>
+        <pre>
+  .font-weight-example {
+    font-weight: bold;
+    /* or */
+    font-weight: 700;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Sets the weight of a font. You can use words like "bold", "bolder",
+        "normal", or "lighter" or you can use use the numbers 100-900 in
+        increments of 100. 100 is the lightest and 900 is the heaviest. Note
+        that the font you are using must have that weight added to the site in
+        order for it to work.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight"
+          target="_blank"
+          >More on font-weight</a
+        >
+      </dd>
+      <dt>
+        <li class="list-style-example">List style</li>
+        <pre>
+  .list-style-example {
+    list-style: square;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Setting the list style for elements in list form like menus, ol, ul,
+        etc. I mainly include this property because it is useful to know
+        "list-style: none;" will get rid of the default bullets that come with
+        the menu tag.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style"
+          target="_blank"
+          >More on list-style</a
+        >
+      </dd>
+      <dt>
+        <h3 class="line-height-example">Line<br />Height</h3>
+        <pre>
+  .line-height-example {
+    line-height: 1.5;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Line height or leading for text. It accepts a number of different units
+        but the recommended unit is to just list a number which will be
+        multiplied by the font size. So "1.5" is essentially 150% of the font
+        size.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height"
+          target="_blank"
+          >More on line-height</a
+        >
+      </dd>
+
+      <dt>
+        <h3 class="text-align-example">Text align</h3>
+        <pre>
+  .text-align-example {
+    text-align: right;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Used for positioning inline elements horizontally. "left", "center",
+        "right", "justify" are examples of values.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align"
+          target="_blank"
+          >More on text-align</a
+        >
+      </dd>
+      <dt><h3 class="text-decoration-example">Text decoration</h3></dt>
+      <pre>
+  .text-decoration-example {
+    text-decoration: underline dotted red;
+  }
+</pre
+      >
+      <dd>
+        Mainly used for adding underlines to text. This is a shorthand property,
+        you can control line weight, color, and style, or leave out values for a
+        simple underline.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"
+          >More text-decoration options</a
+        >
+      </dd>
+    </dl>
+
+    <h2>Layout</h2>
+    <dl>
+      <dt><h3>The Box Model</h3></dt>
+      <dd>
+        <img
+          src="https://i.stack.imgur.com/PeSIJ.gif"
+          alt="box model for css"
+        /><br />
+        Remember that every element as far as CSS is concerned can be considered
+        a box, with margin, padding, border, and the actual content contributing
+        to that box.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+          target="
+      "
+          >Read more on the box model</a
+        >
+      </dd>
+
+      <dt>
+        <h3>Display</h3>
+        <pre>
+  .display-examples {
+    display: block;
+    display: inline;
+    display: inline-block;
+    display: flex;
+    display: none;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        <p>
+          Display is an important property determining an element's layout and
+          behavior. The main thing you want to keep in mind is the difference
+          between inline and block. Inline is the default value for elements
+          like span, a, bold, button, input, etc. These elements take up only as
+          much width as they need to fit their content. Their height and width
+          cannot be set, and they can be used in line without disrupting the
+          content around them. Block elements on the other hand, like div, p,
+          sections, headings, etc take up an entire line, not just their content
+          width. Their height and width can be set. Inline-block is a hybrid of
+          the two. It only takes up as much space as it needs, but it's height
+          and width can be set. You can adjust the default behavior of elements
+          with this property.
+        </p>
+        <p>
+          display: flex is super useful for creating columns and rows of
+          content. It involves a bunch more properties that work with this one,
+          but they only work if display: flex; is set.
+          <a
+            href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            target="_blank"
+            >You can read more about flexbox and all of its properties here.</a
+          >
+        </p>
+        <p>
+          display: none; will hide an element and remove the space it had taken
+          up. It's very useful to use with javascript to show/hide elements.
+        </p>
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+            >More display options</a
+          >
+        </p>
+      </dd>
+      <dt>
+        <h3 class="width-example">Width</h3>
+        <pre>
+  .width-example {
+    width: 300px;
+    width: 30%;
+    width: max-content;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Sets the width of block elements. If you don't specify width, a block
+        element will take up the full width available to it according to its
+        parent, while an inline-block element will take up the width of just its
+        content. Remember that inline elements do not listen to width as a
+        property (see above). Width does not take into account margin, border,
+        or padding unless you add the property box-sizing: border-box; to your
+        rules for the element. It can be useful to set width as a percentage for
+        responsive sizing to different screen sizes.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/width"
+          target="_blank"
+          >More on width</a
+        >
+      </dd>
+
+      <dt>
+        <h3 class="height-example">Height</h3>
+        <br />
+        <pre>
+.height-example {
+  height: 150px;
+  height: 30%;
+  height: max-content;
+}
+</pre
+        >
+      </dt>
+      <dd>
+        Works the same way as width (above) but for height. Remember that the
+        percentage value will be relative to the parent element. So if an
+        element's parent has a height of 300px, and then you set that parent's
+        child's height to 10%, the height will be 10% of 300px (30px). If you
+        wanted height or width to be relative to the screen, you could use the
+        units vh (viewport height) or vw (viewport width). So 50vh is 50% of the
+        viewport, or your screen size.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/height"
+          target="_blank"
+        >
+          More on height</a
+        >
+      </dd>
+      <dt>
+        <h3 class="margin-example">Margin</h3>
+        <pre>
+  .margin-example {
+    /* top, right, bottom, left */
+    margin: 5px 45px 5px 45px;
+
+    /* vertical, horizontal */
+    margin: 5px 45px;
+
+    /* applies to all 4 sides */
+    margin: 10px;
+
+    /*top, left/right, bottom */
+    margin: 10px 45px 5px; 
+
+    /* centers the element by automatically calculating 
+    the margin on either side,
+     given the element's width */ 
+    width: 100px;
+    margin: auto;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Margin creates space around an element, giving it separating it from
+        other elements. The margin property is a shorthand that combines
+        margin-top, margin-bottom, margin-left, and margin-right. If you give it
+        four values, the order for each is top, bottom, left right. See examples
+        above for other combinations. Margin: auto is very useful to use for
+        centering elements.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin"
+          target="
+        "
+          >More on margin</a
+        >
+      </dd>
+      <dt>
+        <h3 class="padding-example">Padding</h3>
+        <pre>
+  .padding-example {
+    /* top, right, bottom, left */
+    padding: 5px 45px 5px 45px;
+
+    /* vertical, horizontal */
+    padding: 5px 45px;
+
+    /* applies to all 4 sides */
+    padding: 10px;
+
+    /*top, left/right, bottom */
+    padding: 10px 45px 5px; 
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Similar in function to margin, but applies spacing on the inside of an
+        element to give space to the content, not to give space between other
+        elements. It has the same shorthand function, combing padding-top,
+        padding-right, padding-bottom, and padding-left into one. Auto is not
+        used in this case.
+      </dd>
+      <dt>
+        <h3 class="position-example">Position</h3>
+        <pre>
+  .position-example {
+    position: relative;
+    top: 50px;
+    left: -150px;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        For setting how an element is positioned in a document. You can use this in conjuction with the properties top, right, bottom, and left.  The default, if
+        you don't set this, is for the element to be "static" and flow normally
+        with the rest of the page.
+        
+        <p>Position: relative will allow you to set the top, right, bottom and left properties of the element, and it will shift relative to it's default position. </p>
+        <p>Position: absolute will take the element out of the normal flow of a document and position it globally to the page. </p>
+        <p>Position: fixed will fix and element to a specific point on the screen and it will stay fixed there even as other elements scroll.</p>
+        <p>Position: sticky will keep an element in it's normal position until the user scrolls past it, then it will "stick" on the page according to the top, right, bottom, and left properties.</p>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">More on position</a>
+      </dd>
+      <dt>
+        <h3 class="overflow-example">Overflow<br>
+          Controls what happens when an element's content overflows its container.  </h3>
+<pre>
+.overflow-example {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+</pre>
+      </dt>
+      <dd>Controls what happens when an element's content overflows its container. This can be useful for creating horizontally scrolling content on mobile. You can control both horizontal and vertical together with overflow, or each individually with overflow-x or overflow-y 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target="_blank">More on overflow</a>
+      </dd>
+<dt><h3>Z-index</h3></dt>
+<pre>
+.z-index-example {
+  Z-index: 10;
+}
+</pre>
+<dd>For defining the order of components that overlap or stack on the z-axis. Useful for things you want to appear on top of something else, like a popup modal or dropdown navigation. The higher the number the higher priority it takes.
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank">More about z-index</a>
+</dd>
+    </dl>
+
+    <h3>Background</h3>
+    <dl>
+      <dt><h3 class="background-color-example">Background-color</h3></dt>
+    </dl>
   </body>
 </html>
