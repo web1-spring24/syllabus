@@ -453,45 +453,279 @@
         >
       </dt>
       <dd>
-        For setting how an element is positioned in a document. You can use this in conjuction with the properties top, right, bottom, and left.  The default, if
-        you don't set this, is for the element to be "static" and flow normally
-        with the rest of the page.
-        
-        <p>Position: relative will allow you to set the top, right, bottom and left properties of the element, and it will shift relative to it's default position. </p>
-        <p>Position: absolute will take the element out of the normal flow of a document and position it globally to the page. </p>
-        <p>Position: fixed will fix and element to a specific point on the screen and it will stay fixed there even as other elements scroll.</p>
-        <p>Position: sticky will keep an element in it's normal position until the user scrolls past it, then it will "stick" on the page according to the top, right, bottom, and left properties.</p>
-        <br>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">More on position</a>
+        For setting how an element is positioned in a document. You can use this
+        in conjuction with the properties top, right, bottom, and left. The
+        default, if you don't set this, is for the element to be "static" and
+        flow normally with the rest of the page.
+
+        <p>
+          Position: relative will allow you to set the top, right, bottom and
+          left properties of the element, and it will shift relative to it's
+          default position.
+        </p>
+        <p>
+          Position: absolute will take the element out of the normal flow of a
+          document and position it globally to the page.
+        </p>
+        <p>
+          Position: fixed will fix and element to a specific point on the screen
+          and it will stay fixed there even as other elements scroll.
+        </p>
+        <p>
+          Position: sticky will keep an element in it's normal position until
+          the user scrolls past it, then it will "stick" on the page according
+          to the top, right, bottom, and left properties.
+        </p>
+        <br />
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+          target="_blank"
+          >More on position</a
+        >
       </dd>
       <dt>
-        <h3 class="overflow-example">Overflow<br>
-          Controls what happens when an element's content overflows its container.  </h3>
-<pre>
+        <h3 class="overflow-example">
+          Overflow<br />
+          Controls what happens when an element's content overflows its
+          container.
+        </h3>
+        <pre>
 .overflow-example {
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: visible;
 }
-</pre>
+</pre
+        >
       </dt>
-      <dd>Controls what happens when an element's content overflows its container. This can be useful for creating horizontally scrolling content on mobile. You can control both horizontal and vertical together with overflow, or each individually with overflow-x or overflow-y 
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target="_blank">More on overflow</a>
+      <dd>
+        Controls what happens when an element's content overflows its container.
+        This can be useful for creating horizontally scrolling content on
+        mobile. You can control both horizontal and vertical together with
+        overflow, or each individually with overflow-x or overflow-y
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+          target="_blank"
+          >More on overflow</a
+        >
       </dd>
-<dt><h3>Z-index</h3></dt>
-<pre>
+      <dt><h3>Z-index</h3></dt>
+      <pre>
 .z-index-example {
   Z-index: 10;
 }
-</pre>
-<dd>For defining the order of components that overlap or stack on the z-axis. Useful for things you want to appear on top of something else, like a popup modal or dropdown navigation. The higher the number the higher priority it takes.
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank">More about z-index</a>
-</dd>
+</pre
+      >
+      <dd>
+        For defining the order of components that overlap or stack on the
+        z-axis. Useful for things you want to appear on top of something else,
+        like a popup modal or dropdown navigation. The higher the number the
+        higher priority it takes.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index"
+          target="_blank"
+          >More about z-index</a
+        >
+      </dd>
     </dl>
 
-    <h3>Background</h3>
+    <h2>Background</h2>
     <dl>
-      <dt><h3 class="background-color-example">Background-color</h3></dt>
+      <dt>
+        <h3 class="background-color-example">Background-color</h3>
+        <pre>
+  .background-color-example {
+    background-color: #8BABFC;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Sets the background color of an element. You can use hex, rgb, rgba,
+        hsl, hsla, or keywords. Remember to make sure your text color and
+        background color have enough contrast, and check with the
+        <a href="https://accessible-colors.com/" target="_blank"
+          >accessible colors tool.</a
+        >
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color"
+          target="_blank"
+          >More on background-color</a
+        >
+      </dd>
+      <dt>
+        <h3 class="background-image-example">Background-image</h3>
+        <pre>
+  .background-image-example {
+    /* for image backgrounds */
+    background-image: url('image.png');
+    /*for gradient backgrounds*/
+    background-image: linear-gradient(red,yellow);
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Background image can be used for actual images as well as creating
+        gradients. If you are linking to a local image, make sure the file path
+        defined according to the stylesheet's location. You can use it in
+        conjunction with background-size, background-position, and
+        background-repeat to get things just right. Use
+        <a href="https://cssgradient.io/" target="_blank"
+          >CSS Gradient Generator</a
+        >
+        to create some beautiful and complex gradients.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/background"
+          target="
+    "
+          >More on backgrounds</a
+        >
+      </dd>
+    </dl>
+    <h2>Borders</h2>
+    <dl>
+      <dt>
+        <h3 class="border-example">Border</h3>
+        <pre>
+  .border-example {
+    border: 3px solid;
+    border: 2px dashed red;
+  }
+</pre
+        >
+      </dt>
+
+      <dd>
+        A shorthand that combines border-width, border-style, and border-color.
+        Any combination of the three can be used. You can use border-top,
+        border-left, border-bottom, and border-right to control the sides
+        individually.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"
+          target="_blank"
+          >More on border</a
+        >
+      </dd>
+
+      <dt>
+        <h3 class="border-radius-example">Border Radius</h3>
+        <pre>
+    .border-radius-example {
+      border-radius: 30px;
+    }</pre
+        >
+      </dt>
+      <dd>
+        Rounds the corners of an element. You can set up to 4 values (top,
+        right, bottom, left) to control each corner individually.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"
+          target="_blank"
+          >More on border-radius</a
+        >
+      </dd>
+    </dl>
+
+    <h2>Transforming</h2>
+    <dl>
+      <dt><h3 class="opacity-example
+        ">Opacity</h3></dt>
+      <pre>
+  .opacity-example {
+    opacity: 55%
+  }</pre>
+      <dd>Changes the transparency amount of the element (and any descendents).</dd>
+   <dt><h3 class="transform-example">Transform</h3><br>
+  <pre>
+    .transform-example {
+      transform: rotate(45deg);
+      transform: scale(2)
+      transform: translateY(20px)
+    }
+  </pre>
+  </dt>
+   <dd>The transform property lets you rotate, scale, skew, or translate an element. This can be useful for more complex designs or in conjunction with transition to make animations.
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">More on Transform</a>
+   </dd>
+    </dl>
+
+    <h2>Animation</h2>
+    <dl>
+      <dt><h3 class="transition-example">Transition</h3>
+      <pre>
+  .transition-example {
+    color: red;
+    transition: color .5s;
+  }
+  .transition-example:hover {
+    color: blue;
+  }
+      </pre>
+      </dt>
+      <dd>Transition can be used to smoothly animate a transition between two values for a property. This commonly used when you want to animate a state on hover or with Javascript. The transition needs a "trigger" like hover to occur, and a definition of the below/after value. The first value is the property, the second is the timing. You can also add a delay or more advanced timing. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank">More on Transition</a></dd>
+    
+    <dt class="keyframe-example"><h3>Advanced animations with @keyframes</h3></dt>
+    <pre>
+      @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+      }
+
+      .keyframe-example {
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+    </pre>
+    <dd>For more complex animations, you can use "@keyframe" followed by the name of your animation to set an animation. Either with "to" and "from" or percentages, eg 25% in, 50% in, you can control what properties should change. After defining the animation with @keyframe, you can apply it to an element and adjust settings with several animation properties. <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">Read more about creating css animations</a></dd>
+    </dl>
+
+
+    <h2>Misc.</h2>
+    <dl>
+      <dt>
+        <h3>
+          <input class="accent-color-example" type="checkbox" checked /> Color
+        </h3>
+        <pre>
+  .accent-color-example {
+    accent-color: #ff0000;
+  }
+</pre
+        >
+      </dt>
+      <dd>
+        Sets the accent color for parts certain input types like radio buttons,
+        checkmarks, or progress bars.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color"
+          target="blank"
+          >More on accent colors</a
+        >
+      </dd>
+
+      <dt>
+        <h3 class="cursor-example">Cursor</h3>
+        <pre>
+.cursor-example {
+  cursor: pointer;
+}</pre
+        >
+      </dt>
+      <dd>
+        Sets what mouse cursor to display over an element on hover. The most
+        useful of the values I believe is cursor: pointer; This is inherent for
+        links, but not for buttons, so you might want to add it. Other cursor
+        types may also be useful for custom features to help with affordances.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor"
+          target="_blank"
+          >More on cursor</a
+        >
+      </dd>
     </dl>
   </body>
 </html>

@@ -75,3 +75,61 @@
     white-space: nowrap;
     
   }
+
+  .background-color-example {
+    background-color: #8BABFC;
+  }
+
+  .background-image-example {
+   
+    background-image: linear-gradient(to right,yellow,red);
+  }
+
+  .border-example {
+  
+    border: 2px dashed red;
+  }
+
+  .border-radius-example {
+    border-radius: 30px;
+    background-color: #8BABFC;
+  }
+
+  .cursor-example {
+    cursor: pointer;
+  }
+
+  .accent-color-example {
+    accent-color: #ff0000;
+  }
+
+  .opacity-example {
+    opacity: 55%
+  }
+
+  .transform-example {
+    transform: rotate(45deg);
+    display: inline-block;
+
+  }
+
+  .transition-example {
+    color: red;
+    transition: color .5s;
+  }
+  .transition-example:hover {
+    color: blue;
+  }
+
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+  .keyframe-example {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
