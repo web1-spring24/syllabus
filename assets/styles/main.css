@@ -112,6 +112,11 @@ dd {
   border-bottom: 1px solid #aeaeae;
 }
 
+dt {
+  font-weight: bold;
+}
+
 h3 {
   margin-bottom: 15px;
 }
+

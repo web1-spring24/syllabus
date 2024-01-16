@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-45KQHJCPQW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-45KQHJCPQW");
+    </script>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3341456, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <title>Glossary of Terms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="img/png" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="assets/imgs/tcnj-logo.png" /><br />
+    <a href="index.html">← Back to Syllabus</a>
+    <h1>Glossary of Terms</h1>
+
+    <dl>
+      <dt>attribute</dt>
+      <dd>Refers to HTML attributes, which is a name/value pair that goes inside of an HTML tag. It provides additional data or functionality related to an HTML tag.
+         Many HTML tags have attributes specific to the tag type that help are only valid for that type, 
+         such as href for anchor tags or src for image tags. IDs and classes are also attributes.  </dd>
+    </dl>
+
+
+    <dl>
+      <dt>bracket - left bracket, right bracket, curly bracket</dt>
+      <dd>Left and right bracket refers to the "<" and ">" characters respectively. They are also called angle brackets. We will be using them primarily in HTML to enclose our tags.
+      Curly bracket refers to the "{ }" characters which we will use in CSS and Javascript syntax.  </dd>
+    </dl>
+
+    <dl>
+      <dt>branch</dt>
+      <dd>A Git term, refers to a separate “folder” or “section” of the main branch of code that can be created, meant to make updates without interfering with the main code </dd>
+    </dl>
+
+    <dl>
+      <dt>commit</dt>
+<dd> A Git term, When you “save” your code to your repo (where the code lives) on your computer, you are committing that code. If a Git repo is not set up, you're just saving code, not committing it.
+</dd>    </dl>
+
+<dl>
+  <dt> class </dt>
+  <dd> As used in CSS, a class is used to define a specific style you want to apply to elements. In css, you designate a class with
+    a period followed by the styles you want to apply to that class within curly brackets, like this <code>.my-classs-name { styles go here }</code>. To then attach that class to an HTML element, you would do this <code> &lt;p class=&quot;my-class-name&quot;&gt;
+    </code>. Note that the HTML does not include the period, just the class name. The difference between a class and an ID is that a class can be used to style multiple
+  elements, while an ID should be unique and only used once. IDs are often used for forms, Javascript, and linking, so for styling purposes it's best to use a class. </dd>
+</dl>
+
+<dl>
+  <dt>clone</dt>
+  <dd>A Git term,  when you make an exact copy of a repo for collaborating you can clone it. </dd>
+</dl>
+
+<dl>
+  <dt>closing the tag</dt>
+  <dd> You might hear me say "make sure to close that tag". This means that in HTML, you open a tag by writing that HTML element, such as
+    <code>&lt;p&gt;
+    </code> You can then proceed to put content in that tag, but you need to remember to close it by adding <code>&lt;/p&gt;
+    </code> to the other side. Some HTML tags are self closing, meaning they cannot have content inside of them, and so they don't need a closing tag.
+    Examples of this are the <code>&lt;img&gt;
+    </code> and <code>&lt;input&gt;
+    </code> tags. (Remember that while these tags don't have content inside of them, they do have attributes such as src and type that
+    define their qualities.)
+  </dd>
+</dl>
+
+<dl>
+  <dt>CSS</dt>
+  <dd>Stands for "cascading stylesheets", this is a language made for styling a webpage. CSS is a rule based language, meaning you write rules to specify
+     elements and then what styles you want applied to those elements. </dd>
+</dl>
+
+<dl>
+  <dt>css selectors</dt>
+  <dd>Part of the CSS rule that designates what part of the HTML document you would like to style. Looking at this code: <code>
+    p {
+      color: green;
+      font-size: 16px;
+      }
+  </code> p is the selector. In this case the CSS would be applying to all paragraph tags. You can select in a number of different ways, such as by class, ID, child, attributes, states, and more.</dd>
+</dl>
+
+<dl>
+  <dt>css properties</dt>
+  <dd>A style characteristic defined in the CSS rule that accepts a value. Looking at this code: <code>
+    p {
+      color: green;
+      font-size: 16px;
+      }
+  </code> color and font-size are properties. What comes after the colon is their values. Together they are a property/value pair.   </dd>
+</dl>
+
+<dl>
+  <dt>
+    file path
+  </dt>
+  <dd>A file path specifies the location of a file in a computer's file structure. HTML elements like anchor tags (links), img tags, and stylesheet references all need file
+    paths to tell the browser the source or destination of the content. You should define a file path relative to where it is being requested from. Reference <a href="https://docs.google.com/presentation/d/1lYMEzSLqEFF0wqWkyzriv2BAo78sJmnl0gf2YHwrEr0/edit#slide=id.g2af0ffdc662_0_0" target="_blank">this slide</a> for more background. 
+  </dd>
+</dl>
+
+<dl>
+  <dt>fork</dt>
+  <dd>A Git term, when you make a copy of a repo that you can make your own changes to independent of the original, that is a fork. </dd>
+</dl>
+
+<dl>
+  <dt>
+    href
+  </dt>
+  <dd>"hyperlink reference" or pronounced h-ref, it is an attribute of an anchor tag or link tag that specifies the file path to reference. </dd>
+</dl>
+
+<dl>
+  <dt>id</dt>
+  <dd>An attribute used to specify a unique ID for an html element. Every ID on a page should be unique. An ID can used to target a specific HTML element through CSS for styling or Javascript to perform a specific action regarding that element. In CSS, an ID can be referenced with the "#" symbol. </dd>
+</dl>
+
+<dl>
+  <dt>index.html</dt>
+  <dd>index.html is the main page of a website. If someone goes to a website without specifying a file path beyond the domain, index.html is the page that will be brought up. When coding website we usually start with index.html as the first or home page.</dd>
+</dl>
+
+<dl><dt>Javascript</dt>
+<dd>Often abbreviated JS, Javascript is a very popular programming language used across the web. 98.7% of websites use javascript. With javascript, website are able to become interactive and dynamic, displaying and updating content based on user interactions.</dd>
+</dl>
+
+<dl>
+  <dt>Java</dt>
+  <dd>Though it sounds very similar to Javascript, Java is a completely different programming language. Java is used more for applications and software rather than web development like Javascript is. We won't be touching on Java in this class. </dd>
+</dl>
+
+<dl>
+  <dt>merge</dt>
+  <dd>A Git term, when you combine a branch with another branch, or code from two sources, you are merging them.</dd>
+</dl>
+
+<dl>
+  <dt>Name / value pair</dt>
+  <dd> Sometimes called key / value or property / value depending on what you are working with, it simply refers to the combination two related piece of data in which
+    one equals the other. Examples of this in the work we'll be doing include html attributes and their values, such as "type=textbox", CSS property / values like color:blue or Javascript variables such as x = 5;
+    
+  </dd>
+</dl>
+
+
+<dl>
+  <dt>push/pull</dt>
+  <dd>Git terms. When you "push" your code, you are sending committed code to a remote repo. When you "pull" you are requesting are updates from that remote repository to be merged into your copy of the repo.</dd>
+</dl>
+
+<dl>
+  <dt>rel</dt>
+  <dd> Stands for relationship when used as an attribute for the link html element. Has values like "stylesheet" or "icon" referencing the relationship of the linked reference.</dd>
+</dl>
+
+  </body>
+</html>
