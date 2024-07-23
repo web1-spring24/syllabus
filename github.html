@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-45KQHJCPQW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-45KQHJCPQW");
+    </script>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3341456, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <title>Understanding and Using Github</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="img/png" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+<h1>Understanding and Using Github</h1>
+
+<h2>What is Git and Github?</h2>
+
+<p>
+    <b>Git</b> is used by developers to track and manage their code. Its main benefit is that it keeps track of file <b>versions</b>, meaning that if you update your the code in a file, you can still access previous versions if you need them. </p> 
+    
+    <p> It is also 
+    very helpful for when multiple developers work together. Git has the ability to allow for different developers to work on different <b>"branches"</b> of code and can intelligently <b>"merge"</b> branches together. A coding project on Git is called a <b>repository</b>, or <b>"repo"</b>.
+</p>
+
+<p><b><a href="https://github.com/" target="_blank">GitHub</a></b> is a software brand that manages Git repositories and makes it possible to host the code on the web. We will use Github to manage our Git repositories in this class. </p>
+
+<p>It is possible to use Git via your computer's "command line interface", works by entering lines of commands for your computer to execute. But an easier and more intuitive way for us to do this is to use GitHub Desktop, a software app for your computer meant to act as an interface for using Git and uploading your code to Github</p>
+
+<figure>
+    <img src="assets/imgs/gitcli.png">
+    <figcaption><i>Accessing Git via the Command Line Interface requires you to know the exact commands to enter and does not offer visual feedback</i></figcaption>
+</figure>
+
+<figure>
+    <img src="assets/imgs/githubdesktop.png">
+    <figcaption><i>GitHub Desktop makes Git a lot more intuitive. Github Desktop is an example of a <b>GUI</b> or <b>Graphical User Interface</b>
+    The opposite of a Graphical User Interface (GUI) is a Command Line Interface (CLI).
+    </i></figcaption>
+</figure>
+
+<h2>How to setup a repository with Github</h2>
+
+<ol>
+    <li>First, make sure you have <a href="https://github.com/signup" target="_blank">signed up for a GitHub account</a> and have <a href="https://desktop.github.com/download/" target="_blank">downloaded GitHub Desktop</a></li>
+    <li>For the purposes of our class, make a folder on your computer where all of your repositories can live. When you create a Git repository, you are creating a physical folder location on your computer for the repository and all of the files within it to live. Be careful not to move this folder, as this will "break" the file path and the repository. Because of this, I recommend creating a dedicated folder to keep things organized. Creating a new folder is usually accessed by going to File > New Folder in either Finder or File Explorer depending on your operating system.</li>
+    <li>Now, open GitHub Desktop, and navigate to File > New Repository. Give your repository a descriptive name. Use dashes instead of spaces. In general it is a best practice to create file and folder names without spaces. Optionally, give your repository a description. For Local Path, make sure to choose the folder we created in Step 2 as the place where this repository will live. 
+ You can leave the Git Ignore, License, and README settings untouched. 
+
+ <img src="assets/imgs/createnewrepo.png">
+    </li>
+    <li>Click create repository. A new folder matching the name of your repository will be created. From now on, any changes or files added to this folder will be tracked by Git.</li>
+</ol>
+
+<h2>Saving changes to your repository</h2>
+<p>Any changes you make within your repository should be automatically tracked in GitHub desktop. If you open your repository, you should see a list of changed files along with a log of what has changed. To save these changes to Git, you need to "commit" them. </p>
+
+<ol>
+    <li>First, select what files you want to commit. (They will most likely all be selected by default, and you can keep it this way)</li>
+    <li>Next, enter a summary of your changes in the space next to your icon</li>
+</ol>
+
+</body>
+</html>
