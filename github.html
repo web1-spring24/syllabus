@@ -44,9 +44,20 @@
     />
   </head>
 <body>
+    <img src="assets/imgs/tcnj-logo.png" /><br />
+    <a href="index.html">← Back to Syllabus</a><br>
 <h1>Understanding and Using Github</h1>
 
-<h2>What is Git and Github?</h2>
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#what-is-git">What is Git and Github?</a></li>
+    <li><a href="#set-up-repo">How to setup a repository with Github</a></li>
+    <li><a href="#save-changes">Saving changes to your repository</a></li>
+    <li><a href="#publish-live">Publishing your code to GitHub.com and making it live</a></li>
+    <li><a href="#access">Accessing your code for editing via GitHub Desktop</a></li>
+</ul>
+
+<h2 id="what-is-git">What is Git and Github?</h2>
 
 <p>
     <b>Git</b> is used by developers to track and manage their code. Its main benefit is that it keeps track of file <b>versions</b>, meaning that if you update your the code in a file, you can still access previous versions if you need them. </p> 
@@ -71,7 +82,7 @@
     </i></figcaption>
 </figure>
 
-<h2>How to setup a repository with Github</h2>
+<h2 id="set-up-repo">How to setup a repository with Github</h2>
 
 <ol>
     <li>First, make sure you have <a href="https://github.com/signup" target="_blank">signed up for a GitHub account</a> and have <a href="https://desktop.github.com/download/" target="_blank">downloaded GitHub Desktop</a></li>
@@ -84,15 +95,50 @@
     <li>Click create repository. A new folder matching the name of your repository will be created. From now on, any changes or files added to this folder will be tracked by Git.</li>
 </ol>
 
-<h2>Saving changes to your repository</h2>
+<h2 id="save-changes">Saving changes to your repository</h2>
 <p>Any changes you make within your repository should be automatically tracked in GitHub desktop. If you open your repository, you should see a list of changed files along with a log of what has changed. To save these changes to Git, you need to "commit" them. </p>
+
+<img src="assets/imgs/commit.png">
 
 <ol>
     <li>First, select what files you want to commit. (They will most likely all be selected by default, and you can keep it this way)</li>
     <li>Next, enter a summary of your changes in the space next to your icon</li>
     <li>Then, select "commit to main". "Main" refers to the current branch you are on, which by default is named "Main". For the purposes of our class we don't need to create multiple branches</li>
-    <li>Your changes are now "committed" to your local Git repository, but not yet published to GitHub</li>
+    <li>Your changes are now "committed" to your local Git repository, but not yet published to GitHub.com. If you have already set up your repository on Github.com, click "Push Origin" and your code will be pushed live to GitHub.com. If you have not yet set up your repository on GitHub.com, follow the steps in the next section. 
+
+        <img src="assets/imgs/push.png">
+    </li>
+    
 </ol>
+<h2 id="publish-live">Publishing your code to GitHub.com and making it live</h2>
+<ol>
+<li>If you repository is not yet live on GitHub, you should see "Publish Repository" as an option in the top right after committing your code, click this.</li>
+<li>Uncheck "Keep This Code Private" and click "Publish Repository.
+    <img src="assets/imgs/publish.png">
+</li>
+<li>At this point you will be prompted to log in to Github, do so.</li>
+<li>Next, back in GitHub Desktop, click "View on Github" to see your repository on GitHub.com. If you don't see this option right away, you can go to Repository > View on GitHub from the GitHub desktop menu bar.
+<img src="assets/imgs/viewongithub.png">    
+</li>
+<li>This will open Github.com on your browser. Navigate to settings and find "Pages" in the settings menu.
+    <img src="assets/imgs/settings.png"><br>
+    <img src="assets/imgs/pages.png">
+</li>
+<li>Under "branch" select "None" and change it to "Main", and click "save".
+    <img src="assets/imgs/pagebranch.png">
+</li>
+<li>In a few minutes, your website will be live at [your-username].github.io/[your-repo-name]
+    Every time you push code it will update!
+    <img src="assets/imgs/live.png">
+    </li>
+
+</ol>
+<i>Note: If you get a 404 error when you load your website, it is because Github cannot find index.html. Did you name your homepage something different, or accidentally capitalize the I in index? If so, manually add the file to the end of your url, eg "https:/kerrin.github.io/Index.html"</i>
+
+<h2 id="access">Accessing your code for editing via GitHub Desktop</h2>
+<p>In order to make sure that the code you are editing in visual studio code is connected to your repository, I like to open the code from GitHub Desktop. An easy way to do this is to open GitHub desktop and from the menu bar go to Repository > Open in Visual Studio Code.</p>
+<p>Using this menu you can also access other important locations, such as Repository > View on GitHub and Repository > Open in Finder/File Explorer. From here you can double click on an HTML file to open the code locally in your browser</p>
+
 
 </body>
 </html>
