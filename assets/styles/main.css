@@ -123,4 +123,9 @@ h3 {
 figure {
   margin: 0;
   padding-block: 20px;
+
+}
+
+figcaption {
+  font-style: italic;
 }
