@@ -1,0 +1,98 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: "Lexend";
+    font-size: 16px;
+    color: #333651;
+    line-height: 150%;
+    font-weight: 400;
+
+}
+
+h1 {
+    font-family: "Grandstander";
+    font-size: 36px;
+    color: #333651;
+    line-height: 130%;
+    font-weight: 700;
+
+}
+
+a {
+    font-family: "Lexend";
+    font-size: 16px;
+    color: #3D96B7;
+    line-height: 150%;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+ a:hover {
+
+   
+
+ }
+
+#orange-cat {
+    float: right;
+}
+
+
+
+ body {
+    /* the body content will take up 60% of the width of the page */
+    width: 60%;
+    /* margin-inline means right/left. auto means that margin
+     will fill up the remaining space on either side*/
+    margin-inline: auto; 
+ }
+
+
+.course {
+    width: 400px;
+    margin-block: 30px;
+    border-radius: 15px;
+}
+
+ #psych-101 {
+    background-color: purple;
+ }
+
+ #art-history {
+    background-color: red;
+ }
+
+ .learn-more-button {
+    background-color: blue;
+    border: 1px solid black;
+    padding: 10px;
+ }
+
+
+
+ .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+ }
+
+ #article-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    }
+  
+#article-2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    }
+
+#article-3 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+}

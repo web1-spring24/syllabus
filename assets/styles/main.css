@@ -120,3 +120,12 @@ h3 {
   margin-bottom: 15px;
 }
 
+figure {
+  margin: 0;
+  padding-block: 20px;
+
+}
+
+figcaption {
+  font-style: italic;
+}
